@@ -9,5 +9,10 @@ function calcular(){
     var horas = horasProjeto.valueAsNumber
     var resposta = valor*horas
     console.log(resposta)
-    resultado.textContent = 'R$ ' +resposta+",00"
+    if (true) {
+        resultado.textContent = 'R$ ' +resposta+',00'
+    }
+    else  {
+        resultado.textContent = 'Projeto inviável'
+    }
 }
